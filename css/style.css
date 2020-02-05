@@ -10,6 +10,22 @@
     margin-right: 20px;
 }
 
+#header .pro-li {
+    display: none;
+}
+
+#header .menu ul li:hover .pro-li {
+    display: block;
+    position: absolute;
+    background-color: #41484e;
+    float: right;;
+}
+
+#header .pro-li li:hover a {
+    color:rgb(213, 172, 99) ;
+}
+/* header end */
+
 #top-slider {
     background-image: url(../photo/living.jpg);
     height: 100vh;
@@ -56,6 +72,7 @@ color: white;
     font-size: 1.4em;
 }
 
+
 #top-slider p {
     font-size: 1.2em;
     font-weight: 700;
@@ -74,6 +91,288 @@ color: white;
     }
 }
 
+#about-us {
+    margin-top:5em;
+}
+
+#about-us  h1 {
+    font-size: 40px;
+    color: #2b2b2b;
+    position: relative;
+    padding: 15px 0;
+    
+}
+
+#about-us  h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: #d5ac63;
+}
+
+#about-us h2 {
+    font-size: 20px;
+    margin: 15px 0;
+    color: #2b2b2b;
+}
+
+#about-us p {
+    font-family: Roboto;
+    font-weight: 400;
+    color: #363636;
+    font-size: 16px;
+}
+
+#about-us h3 {
+    font-size: 25px;
+    color: #363636;
+    margin: 15px 0;
+
+}
+#about-us button {
+    padding: 12px 30px;
+    font-size: 13px;
+    color: #ffffff;
+    background: #d5ac63;
+    border:none;
+    border-radius: 20px;
+    margin: 20px 0;
+}
+
+#about-us button:hover {
+    background-color: #41484e;
+    color: white;
+}
+
+#about-us button::after {
+    content: "\f35a";
+    font-family: "Font Awesome 5 Pro";
+    padding-left:10px;
+    position: relative;
+}
+
+#about-us button:hover::after {
+    animation: long 2s infinite linear;
+} 
+
+@keyframes long {
+    from {
+        left: 0;
+    }
+    to {
+        left: 15px;
+    }
+}
+/* about-us end */
+/* icon-holder */
 
 
+#icon-holder .holder {
+    margin-top: 15px;
+    margin-bottom: 5em;
+}
+#icon-holder .icon-text {
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px ;
+}
 
+#icon-holder h2{
+    font-size: 22px;
+}
+
+#icon-holder .icon-text p{
+    font-size: 18px;
+    margin-top: 8px;
+    color: #363636
+}
+
+#icon-holder .fa i {
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background-color: #41484e;
+    color: white;
+    padding: 15px;
+    margin-left: 0;
+}
+
+#icon-holder .fa-1 {
+    position: relative;
+}
+
+#icon-holder .fa-1:hover i {
+    animation: trophy .2s;
+}
+
+@keyframes trophy {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(45deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75%{
+       transform: rotate(-45deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+#advertising {
+    margin: 4em 0;
+}
+
+#advertising h1 {
+    font-size: 40px;
+    position: relative;
+    color: black;
+    padding: 15px 0;
+}
+
+#advertising h1::after {
+    content: '';
+    width: 70px;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color:#d5ac63;
+    position: absolute;
+}
+
+#advertising button {
+    padding: 12px 30px;
+    font-size: 15px;
+    color: #41484e;
+    background: white;
+    border:none;
+    border-radius: 20px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0);
+}
+
+
+#advertising button:hover {
+    color: white;
+    background: #41484e;
+    cursor: pointer;
+}
+
+#luxury {
+    margin: 5em 0;
+}
+
+#luxury  .lux-img {
+    overflow: hidden;
+    border-radius: 5px 5px 0 0;
+    border-bottom: 4px solid #d5ac63;
+}
+
+#luxury .lux-img img {
+    transition: .3s;
+}
+
+#luxury .lux-img:hover img {
+    transform: scale(1.1);
+}
+
+
+#luxury .lux-item h3 {
+    font-size: 20px;
+    color:#2b2b2b;
+    margin: 15px 0;
+} 
+
+#luxury .lux-item p {
+    color: #363636;
+    font-size: 18px;
+    margin:10px 0;
+    
+}
+
+#luxury .lux-item .col-5 a {
+    text-decoration: none;
+    color:#7b7b7b;
+    font-size: 13px;
+}
+
+#luxury .lux-item .col-5 a::before {
+    font-family: "Font Awesome 5 Pro";
+    content: "\f07c";
+    color:#363636 ;
+    padding-right: 6px;
+}
+
+#luxury .lux-item .col-4 a {
+    text-decoration: none;
+    color:#7b7b7b;
+    font-size: 13px;
+}
+
+#luxury .lux-item a:hover {
+    color:black;
+}
+
+#luxury .col-5 {
+    padding-left: 0;
+}
+
+
+/* luxury end */
+
+#dreams {
+    text-align: center;
+    background-color: #41484e;
+    height: 300px;
+    padding: 4em 0;
+}
+
+#dreams .chat h1 {
+    font-size: 40px;
+    color: white;
+    margin: 20px 0;
+}
+
+#dreams h3 {
+    color: #6e6d6d;
+    font-size: 25px;
+    margin: 20px 0;
+}
+
+
+#dreams button {
+    padding: 12px 30px;
+    font-size: 13px;
+    color: #ffffff;
+    background: #d5ac63;
+    border:none;
+    border-radius: 20px;
+
+}
+
+
+#dreams .chat button::after {
+    content: "\f073";
+    font-family: "Font Awesome 5 Pro";
+    padding-left: 10px;
+    position: relative;
+}
+
+#dreams .chat button:hover::after {
+    animation: calendar 2s infinite linear;
+} 
+
+@keyframes calendar {
+    from {
+        left: 0;
+    }
+    to {
+        left: 15px;
+    }
+  
+}

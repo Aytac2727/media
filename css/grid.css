@@ -41,12 +41,17 @@
     align-items: center;
 }
 
+.a-link {
+    text-decoration: none;
+    color: white;
+}
+
 .d-flex {
     display: flex;
 }
 
 [class*="col-"] {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     padding-left: 15px;
     padding-right: 15px;
 }
